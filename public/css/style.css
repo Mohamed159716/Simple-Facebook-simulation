@@ -1,0 +1,257 @@
+* {
+    font-family: cursive, sans-serif, Arial; 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box
+}
+.fo{background: #f00; color: #fff; padding: 10px;}
+body {
+    background: #f9f9f9;
+}
+h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+.post {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px 30px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    background: #fff;
+}
+.controls a{
+    /* width: 100px; */
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background: #ccc;
+    /* padding: 10px 20px; */
+    font-size: 18px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    position: absolute;
+    right: -80px;
+    color: #f2f2f2;
+    border-radius: 10px;
+    font-size: 19px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+.controls a.edit {
+    top: 53px;
+    right: -41px;
+    background: #0f0f9c;
+    border: 1px solid #0f0f9c;
+}
+.controls a i {
+    display: block;
+    padding: 10px;
+}
+.controls a.edit:hover {background: transparent; color: #0f0f9c; border-color: #0f0f9c; font-weight: bold;}
+.controls .delete {
+    top: 0;
+    right: -37px;
+    background: #d61212;
+    border: 1px solid #d61212;
+    width: 38px;
+    height: 38px;
+}
+.controls a.delete:hover {background: transparent; color: #d61212; border-color: #d61212;font-weight: bold;}
+a.delete span {
+    position: relative;
+}
+
+a.delete i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+a.delete input {
+        z-index: 2;
+        opacity: .1;
+        width: 44px;
+        position: absolute;
+        height: 43px;
+        display: inline-block;
+        top: 0;
+        left: -21px;
+}
+
+
+
+.controls .show {
+    top: 110px;
+    right: -42px;
+    background: #028644;
+    border: 1px solid #028644;
+}
+.controls a.show:hover {background: transparent; color: #028644; border-color: #028644;font-weight: bold;}
+
+.mainInfo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.mainInfo img {
+    width: 50px;
+    height: 50px;
+    border: 1px dotted #f00;
+    border-radius: 50%;
+}
+.mainInfo .name {
+    margin-left: 10px;
+    font-size: 20px;
+}
+.mainInfo .id {
+    background: #969697;
+    position: absolute;
+    right: 2%;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+.postbody {
+    margin-top: 20px;
+    color: #555;
+}
+.postbody .title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.tools {margin-top: 20px;}
+.tools a{
+    width: 48%;
+    display: inline-block;
+    text-decoration: none;
+    /* text-align: center; */
+    background: #ccc;
+    padding: 10px 20px;
+    font-size: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    border-radius: 12px;
+}
+.tools a:hover {
+    background: #313117;
+    color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+.tools a i {
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.comment {
+    border-top: 2px solid #e6e6e6;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.singleComment span.name {
+    position: absolute;
+    top: 10px;
+    left: 64px;
+    z-index: 3;
+    text-decoration: underline;
+    font-size: 19px;
+}
+.comment form {display: flex;}
+.comment input[type='text'] {
+    width: 79%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.comment input[type='submit'] {
+    width: 18%;
+    padding: 10px 25px;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    transition: all .3s;
+}
+.comment input[type='submit']:hover,
+input:focus {box-shadow: 0 0 10px rgba(0, 0, 0, .3);}
+
+
+
+/* ---- Dsign Form */
+
+form.formedit {width: 50%; margin: 180px auto;text-align: center;}
+
+form.formedit input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+label {display: inline-block;margin-bottom: 10px;}
+input {
+    display: block;
+    width: 80%;
+    margin:0 auto 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all .2s;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    font-size: 19px;
+}
+.bodypost input {
+    height: 100px;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+
+.commentsSection {
+    margin-top: 20px;
+}
+.commentsSection .singleComment {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.commentsSection .singleComment{
+    position: relative;
+    overflow: hidden;
+}
+.commentsSection .singleComment img {
+    width: 50px;
+    height: 50px;
+    border: 1px dotted #f00;
+    border-radius: 50%;
+    margin-right: 20px;
+
+    position: absolute;
+    top: 10px;
+}
+
+.commentsSection .singleComment p {
+    background: #f2f2f2;
+    padding: 31px;
+    margin-left: 70px;
+    position: relative;
+    width: 100%;
+}
+.commentsSection .singleComment p:before {
+    content: '';
+    border: 21px solid transparent;
+    border-right-color: #f2f2f2;
+    position: absolute;
+    top: 8px;
+    left: -42px;
+}
